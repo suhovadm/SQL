@@ -1,17 +1,17 @@
--- 4. Создаём таблицу BarberFeedbacks 
--- Таблица с фидбеком о барберах.
+-- 4. РЎРѕР·РґР°С‘Рј С‚Р°Р±Р»РёС†Сѓ BarberFeedbacks 
+-- РўР°Р±Р»РёС†Р° СЃ С„РёРґР±РµРєРѕРј Рѕ Р±Р°СЂР±РµСЂР°С….
 
 create table BarberFeedbacks (
 
-feedback_id int -- ID-шник записи с фидбеком.
-PRIMARY KEY, -- первичный ключ.
-barber_id int, -- ID-шник барбера.
-client_id int, -- ID-шник клиента.
-feedback_text text, -- Текст с отзывом.
-rating varchar(20), -- Оценка барберу словами.
+feedback_id int -- ID-С€РЅРёРє Р·Р°РїРёСЃРё СЃ С„РёРґР±РµРєРѕРј.
+PRIMARY KEY, -- РїРµСЂРІРёС‡РЅС‹Р№ РєР»СЋС‡.
+barber_id int, -- ID-С€РЅРёРє Р±Р°СЂР±РµСЂР°.
+client_id int, -- ID-С€РЅРёРє РєР»РёРµРЅС‚Р°.
+feedback_text text, -- РўРµРєСЃС‚ СЃ РѕС‚Р·С‹РІРѕРј.
+rating varchar(20), -- РћС†РµРЅРєР° Р±Р°СЂР±РµСЂСѓ СЃР»РѕРІР°РјРё.
 FOREIGN KEY (barber_id) references Barbers(barber_id),
--- Внешний ключ. Его цепляем к таблице Barbers(barber_id)
+-- Р’РЅРµС€РЅРёР№ РєР»СЋС‡. Р•РіРѕ С†РµРїР»СЏРµРј Рє С‚Р°Р±Р»РёС†Рµ Barbers(barber_id)
 FOREIGN KEY(client_id) references Clients(client_id)
--- Внешний ключ. Его цепляем к таблице Clients(client_id)
+-- Р’РЅРµС€РЅРёР№ РєР»СЋС‡. Р•РіРѕ С†РµРїР»СЏРµРј Рє С‚Р°Р±Р»РёС†Рµ Clients(client_id)
 
 );
