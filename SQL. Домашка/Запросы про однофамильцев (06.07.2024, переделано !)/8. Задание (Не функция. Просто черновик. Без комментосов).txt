@@ -1,0 +1,21 @@
+select
+
+Clients.Name as 'Имя', 
+Clients.email as 'email', 
+Clients.Phone as 'Телефон клиента', 
+Clients.Sex as 'Пол', 
+Clients.History as 'История', 
+Clients.DiscountPercent as 'Процент скидки', 
+Clients.maillist as 'Почтовая рассылка'
+
+from Clients where exists ( select 1 from Clients c2 where Clients.Name = c2.Name and c2.ID <> Clients.ID )
+
+select
+
+Employees.Name as 'Имя', 
+Employees.JobTitle as 'Должность', 
+Employees.Employmentdate as 'Дата принятия на работу', 
+Employees.Sex as 'Пол', 
+Employees.Salary as 'Зарплата'
+
+from Employees where exists ( select 1 from Employees e2 where Employees.Name = e2.Name and e2.ID <> Employees.ID );
