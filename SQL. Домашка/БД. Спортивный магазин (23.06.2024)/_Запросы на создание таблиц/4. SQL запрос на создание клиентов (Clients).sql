@@ -1,10 +1,10 @@
-/* 4. Клиенты (Clients). */
+/* 4. РљР»РёРµРЅС‚С‹ (Clients). */
 
-CREATE TABLE Clients ( Id int PRIMARY KEY IDENTITY(1,1), /* Создаём таблицу Клиенты (Clients). */
-Name nvarchar(100), /* ФИО клиента. */
-email nvarchar(100), /* Электронная почта клиента. */
-Phone varchar(20), /* Телефон клиента. */
-Sex nvarchar(50), /* Пол клиента. */
-History nvarchar(100), /* История заказов. */
-DiscountPercent int, /* Процент скидки для клиента. */
-maillist nvarchar(50) ); /* Подписан ли клиента на почтовую рассылку. */
+CREATE TABLE Clients ( Id int PRIMARY KEY IDENTITY(1,1), /* РЎРѕР·РґР°С‘Рј С‚Р°Р±Р»РёС†Сѓ РљР»РёРµРЅС‚С‹ (Clients). */
+Name nvarchar(100), /* Р¤РРћ РєР»РёРµРЅС‚Р°. */
+email nvarchar(100), /* Р­Р»РµРєС‚СЂРѕРЅРЅР°СЏ РїРѕС‡С‚Р° РєР»РёРµРЅС‚Р°. */
+Phone varchar(20), /* РўРµР»РµС„РѕРЅ РєР»РёРµРЅС‚Р°. */
+Sex nvarchar(50), /* РџРѕР» РєР»РёРµРЅС‚Р°. */
+History nvarchar(100), /* РСЃС‚РѕСЂРёСЏ Р·Р°РєР°Р·РѕРІ. */
+DiscountPercent int, /* РџСЂРѕС†РµРЅС‚ СЃРєРёРґРєРё РґР»СЏ РєР»РёРµРЅС‚Р°. */
+maillist nvarchar(50) ); /* РџРѕРґРїРёСЃР°РЅ Р»Рё РєР»РёРµРЅС‚Р° РЅР° РїРѕС‡С‚РѕРІСѓСЋ СЂР°СЃСЃС‹Р»РєСѓ. */
