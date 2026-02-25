@@ -1,12 +1,12 @@
--- 1. Хранимая процедура Hello World!
+-- 1. РҐСЂР°РЅРёРјР°СЏ РїСЂРѕС†РµРґСѓСЂР° Hello World!
 
-create procedure HelloWorld -- Создаём процедуру, даём имя.
+create procedure HelloWorld -- РЎРѕР·РґР°С‘Рј РїСЂРѕС†РµРґСѓСЂСѓ, РґР°С‘Рј РёРјСЏ.
 
-as begin -- Запускаем.
+as begin -- Р—Р°РїСѓСЃРєР°РµРј.
 
-print ('Hello World!') -- Принтуем.
+print ('Hello World!') -- РџСЂРёРЅС‚СѓРµРј.
 
-end -- Закрываем.
-go -- Тормозим цикл.
+end -- Р—Р°РєСЂС‹РІР°РµРј.
+go -- РўРѕСЂРјРѕР·РёРј С†РёРєР».
 
-exec HelloWorld -- Выполняем.
+exec HelloWorld -- Р’С‹РїРѕР»РЅСЏРµРј.
