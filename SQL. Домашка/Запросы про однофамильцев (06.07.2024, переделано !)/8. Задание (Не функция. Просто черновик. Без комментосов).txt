@@ -1,21 +1,21 @@
 select
 
-Clients.Name as 'Имя', 
+Clients.Name as 'РРјСЏ', 
 Clients.email as 'email', 
-Clients.Phone as 'Телефон клиента', 
-Clients.Sex as 'Пол', 
-Clients.History as 'История', 
-Clients.DiscountPercent as 'Процент скидки', 
-Clients.maillist as 'Почтовая рассылка'
+Clients.Phone as 'РўРµР»РµС„РѕРЅ РєР»РёРµРЅС‚Р°', 
+Clients.Sex as 'РџРѕР»', 
+Clients.History as 'РСЃС‚РѕСЂРёСЏ', 
+Clients.DiscountPercent as 'РџСЂРѕС†РµРЅС‚ СЃРєРёРґРєРё', 
+Clients.maillist as 'РџРѕС‡С‚РѕРІР°СЏ СЂР°СЃСЃС‹Р»РєР°'
 
 from Clients where exists ( select 1 from Clients c2 where Clients.Name = c2.Name and c2.ID <> Clients.ID )
 
 select
 
-Employees.Name as 'Имя', 
-Employees.JobTitle as 'Должность', 
-Employees.Employmentdate as 'Дата принятия на работу', 
-Employees.Sex as 'Пол', 
-Employees.Salary as 'Зарплата'
+Employees.Name as 'РРјСЏ', 
+Employees.JobTitle as 'Р”РѕР»Р¶РЅРѕСЃС‚СЊ', 
+Employees.Employmentdate as 'Р”Р°С‚Р° РїСЂРёРЅСЏС‚РёСЏ РЅР° СЂР°Р±РѕС‚Сѓ', 
+Employees.Sex as 'РџРѕР»', 
+Employees.Salary as 'Р—Р°СЂРїР»Р°С‚Р°'
 
 from Employees where exists ( select 1 from Employees e2 where Employees.Name = e2.Name and e2.ID <> Employees.ID );
