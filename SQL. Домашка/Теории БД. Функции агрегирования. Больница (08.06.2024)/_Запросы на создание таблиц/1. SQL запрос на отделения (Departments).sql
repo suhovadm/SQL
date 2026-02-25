@@ -1,9 +1,9 @@
-/* 1. Отделения (Departments) */
+/* 1. РћС‚РґРµР»РµРЅРёСЏ (Departments) */
 
 CREATE TABLE Departments ( Id int PRIMARY KEY IDENTITY(1,1), 
 
-Building int NOT NULL CHECK (Building BETWEEN 1 AND 5), /* Нет NULL, диапазон от 1 до 5. */
-Name nvarchar(100) NOT NULL UNIQUE CHECK (Name != ''), ); /* Уникальное, не может быть пустым. */
+Building int NOT NULL CHECK (Building BETWEEN 1 AND 5), /* РќРµС‚ NULL, РґРёР°РїР°Р·РѕРЅ РѕС‚ 1 РґРѕ 5. */
+Name nvarchar(100) NOT NULL UNIQUE CHECK (Name != ''), ); /* РЈРЅРёРєР°Р»СЊРЅРѕРµ, РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РїСѓСЃС‚С‹Рј. */
 
-/* Building - корпус. */
-/* Name - Название отделения. */
+/* Building - РєРѕСЂРїСѓСЃ. */
+/* Name - РќР°Р·РІР°РЅРёРµ РѕС‚РґРµР»РµРЅРёСЏ. */
