@@ -1,4 +1,4 @@
-/* 3. Âðà÷è (Doctors). */
+/* 3. Ð’Ñ€Ð°Ñ‡Ð¸ (Doctors). */
 
 CREATE TABLE Doctors ( Id int PRIMARY KEY NOT NULL IDENTITY(1,1), 
 
