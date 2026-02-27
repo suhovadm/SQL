@@ -1,4 +1,4 @@
-/* 12. Расписание (Schedules). */
+/* 12. Р Р°СЃРїРёСЃР°РЅРёРµ (Schedules). */
 
 CREATE TABLE Schedules ( Id int PRIMARY KEY NOT NULL IDENTITY(1,1),
 
