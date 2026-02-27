@@ -1,6 +1,6 @@
-/* 13. Дисциплины (Subjects). */
+/* 13. Р”РёСЃС†РёРїР»РёРЅС‹ (Subjects). */
 
 CREATE TABLE Subjects ( Id int PRIMARY KEY NOT NULL IDENTITY(1,1),
 
-Name nvarchar(100) NOT NULL UNIQUE CHECK (Name != ''), ); /* Название дисциплины. */
+Name nvarchar(100) NOT NULL UNIQUE CHECK (Name != ''), ); /* РќР°Р·РІР°РЅРёРµ РґРёСЃС†РёРїР»РёРЅС‹. */
 );
