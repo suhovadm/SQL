@@ -1,7 +1,7 @@
-/* 5. Факультеты (Faculties). */
+/* 5. Р¤Р°РєСѓР»СЊС‚РµС‚С‹ (Faculties). */
 
 CREATE TABLE Faculties ( Id int PRIMARY KEY NOT NULL IDENTITY(1,1),
 
 Building int NOT NULL CHECK (Building BETWEEN 1 AND 5),
-Name nvarchar(100) NOT NULL UNIQUE CHECK (Name != ''), /* Название факультета. */
-DeanId int NOT NULL); /* Внешний ключ добавлен через ГУИ. */
+Name nvarchar(100) NOT NULL UNIQUE CHECK (Name != ''), /* РќР°Р·РІР°РЅРёРµ С„Р°РєСѓР»СЊС‚РµС‚Р°. */
+DeanId int NOT NULL); /* Р’РЅРµС€РЅРёР№ РєР»СЋС‡ РґРѕР±Р°РІР»РµРЅ С‡РµСЂРµР· Р“РЈР. */
