@@ -1,8 +1,8 @@
-/* 14. Преподаватели (Teachers). */
+/* 14. РџСЂРµРїРѕРґР°РІР°С‚РµР»Рё (Teachers). */
 
 CREATE TABLE Teachers ( Id int PRIMARY KEY NOT NULL IDENTITY(1,1),
 
-Name nvarchar(max) NOT NULL CHECK (Name != ''), /* Имя преподавателя. */
-Surname nvarchar(max) NOT NULL CHECK (Surname != '') /* Фамилия преподавателя. */
+Name nvarchar(max) NOT NULL CHECK (Name != ''), /* РРјСЏ РїСЂРµРїРѕРґР°РІР°С‚РµР»СЏ. */
+Surname nvarchar(max) NOT NULL CHECK (Surname != '') /* Р¤Р°РјРёР»РёСЏ РїСЂРµРїРѕРґР°РІР°С‚РµР»СЏ. */
 
 );
