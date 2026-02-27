@@ -1,19 +1,19 @@
-/* 6. Вывести полные имена преподавателей факультета "Computer Science", 
-которые НЕ курируют группы кафедры "Software Development". */
+/* 6. Р’С‹РІРµСЃС‚Рё РїРѕР»РЅС‹Рµ РёРјРµРЅР° РїСЂРµРїРѕРґР°РІР°С‚РµР»РµР№ С„Р°РєСѓР»СЊС‚РµС‚Р° "Computer Science", 
+РєРѕС‚РѕСЂС‹Рµ РќР• РєСѓСЂРёСЂСѓСЋС‚ РіСЂСѓРїРїС‹ РєР°С„РµРґСЂС‹ "Software Development". */
 
-/* У факультета Computer Science id-шник = 6. См. таблицу Teachers. */
-/* У Software Development id-шник = 17. Он находится в Departments. */
+/* РЈ С„Р°РєСѓР»СЊС‚РµС‚Р° Computer Science id-С€РЅРёРє = 6. РЎРј. С‚Р°Р±Р»РёС†Сѓ Teachers. */
+/* РЈ Software Development id-С€РЅРёРє = 17. РћРЅ РЅР°С…РѕРґРёС‚СЃСЏ РІ Departments. */
 
-/* Faculties - факультеты. */
-/* Departments - кафедры. */
-/* Groups - группы. */
+/* Faculties - С„Р°РєСѓР»СЊС‚РµС‚С‹. */
+/* Departments - РєР°С„РµРґСЂС‹. */
+/* Groups - РіСЂСѓРїРїС‹. */
 
-SELECT DISTINCT Teachers.Name + ' ' + Teachers.Surname as 'ФИО преподавателей'
+SELECT DISTINCT Teachers.Name + ' ' + Teachers.Surname as 'Р¤РРћ РїСЂРµРїРѕРґР°РІР°С‚РµР»РµР№'
 
 FROM Teachers, Departments, Groups
 
 WHERE Teachers.FacultyId = 6 AND Departments.Id != 17 AND Groups.DepartmentId != 17;
 
-/* Вариант #1. В данном случае, мы насильно биндим FacultyId к Teacher-сам. 
-То есть, у каждого Teacher-са будет id-шник факультета к которому он приписан, 
-а дальше мы просто исключаем id-шник Software Developments (17) из Departments (кафедры) и такой же из Groups (групп). */
+/* Р’Р°СЂРёР°РЅС‚ #1. Р’ РґР°РЅРЅРѕРј СЃР»СѓС‡Р°Рµ, РјС‹ РЅР°СЃРёР»СЊРЅРѕ Р±РёРЅРґРёРј FacultyId Рє Teacher-СЃР°Рј. 
+РўРѕ РµСЃС‚СЊ, Сѓ РєР°Р¶РґРѕРіРѕ Teacher-СЃР° Р±СѓРґРµС‚ id-С€РЅРёРє С„Р°РєСѓР»СЊС‚РµС‚Р° Рє РєРѕС‚РѕСЂРѕРјСѓ РѕРЅ РїСЂРёРїРёСЃР°РЅ, 
+Р° РґР°Р»СЊС€Рµ РјС‹ РїСЂРѕСЃС‚Рѕ РёСЃРєР»СЋС‡Р°РµРј id-С€РЅРёРє Software Developments (17) РёР· Departments (РєР°С„РµРґСЂС‹) Рё С‚Р°РєРѕР№ Р¶Рµ РёР· Groups (РіСЂСѓРїРї). */
