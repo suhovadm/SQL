@@ -1,6 +1,6 @@
-/* 10. Аудитории (LectureRooms). */
+/* 10. РђСѓРґРёС‚РѕСЂРёРё (LectureRooms). */
 
 CREATE TABLE LectureRooms ( Id int PRIMARY KEY NOT NULL IDENTITY(1,1),
 
-Building int NOT NULL CHECK (Building BETWEEN 1 AND 5), /* Номер корпуса в котором располагается аудитория. */
-Name nvarchar(10) NOT NULL UNIQUE CHECK (Name != ''), ); /* Название аудитории. */
+Building int NOT NULL CHECK (Building BETWEEN 1 AND 5), /* РќРѕРјРµСЂ РєРѕСЂРїСѓСЃР° РІ РєРѕС‚РѕСЂРѕРј СЂР°СЃРїРѕР»Р°РіР°РµС‚СЃСЏ Р°СѓРґРёС‚РѕСЂРёСЏ. */
+Name nvarchar(10) NOT NULL UNIQUE CHECK (Name != ''), ); /* РќР°Р·РІР°РЅРёРµ Р°СѓРґРёС‚РѕСЂРёРё. */
