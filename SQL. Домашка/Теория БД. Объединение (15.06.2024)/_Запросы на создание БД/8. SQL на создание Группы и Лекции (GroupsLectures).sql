@@ -1,6 +1,6 @@
-/* 8. Группы и лекции (GroupsLectures). */
+/* 8. Р“СЂСѓРїРїС‹ Рё Р»РµРєС†РёРё (GroupsLectures). */
 
 CREATE TABLE GroupsLectures ( Id int PRIMARY KEY NOT NULL IDENTITY(1,1),
 
-GroupId int NOT NULL, /* Внешний ключ добавлен через ГУИ. */
-LectureId int NOT NULL); /* Внешний ключ добавлен через ГУИ. */
+GroupId int NOT NULL, /* Р’РЅРµС€РЅРёР№ РєР»СЋС‡ РґРѕР±Р°РІР»РµРЅ С‡РµСЂРµР· Р“РЈР. */
+LectureId int NOT NULL); /* Р’РЅРµС€РЅРёР№ РєР»СЋС‡ РґРѕР±Р°РІР»РµРЅ С‡РµСЂРµР· Р“РЈР. */
