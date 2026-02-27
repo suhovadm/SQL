@@ -1,6 +1,6 @@
-/* 11. Лекции (Lectures). */
+/* 11. Р›РµРєС†РёРё (Lectures). */
 
 CREATE TABLE Lectures ( Id int PRIMARY KEY NOT NULL IDENTITY(1,1),
 
-SubjectId int NOT NULL, /* Идентификатор дисциплины. Внешний ключ добавлен через ГУИ. */
-TeacherId int NOT NULL); /* Внешний ключ добавлен через ГУИ. */
+SubjectId int NOT NULL, /* РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РґРёСЃС†РёРїР»РёРЅС‹. Р’РЅРµС€РЅРёР№ РєР»СЋС‡ РґРѕР±Р°РІР»РµРЅ С‡РµСЂРµР· Р“РЈР. */
+TeacherId int NOT NULL); /* Р’РЅРµС€РЅРёР№ РєР»СЋС‡ РґРѕР±Р°РІР»РµРЅ С‡РµСЂРµР· Р“РЈР. */
