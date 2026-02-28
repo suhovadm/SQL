@@ -1,4 +1,4 @@
-/* Лекции (Lectures). */
+/* Р›РµРєС†РёРё (Lectures). */
 
 CREATE TABLE Lectures ( Id INT PRIMARY KEY NOT NULL IDENTITY(1,1), 
 
@@ -7,4 +7,4 @@ LectureRoom nvarchar(max) NOT NULL CHECK (LectureRoom != ''),
 SubjectId int NOT NULL,
 TeacherId int NOT NULL;
 
-/* Здесь не хватает строчки DepartmentsId int, её нужно досоздать через ГУИ. */
+/* Р—РґРµСЃСЊ РЅРµ С…РІР°С‚Р°РµС‚ СЃС‚СЂРѕС‡РєРё DepartmentsId int, РµС‘ РЅСѓР¶РЅРѕ РґРѕСЃРѕР·РґР°С‚СЊ С‡РµСЂРµР· Р“РЈР. */
