@@ -1,4 +1,4 @@
-/* Дисциплины (Subjects). */
+/* Р”РёСЃС†РёРїР»РёРЅС‹ (Subjects). */
 
 CREATE TABLE Subjects ( Id INT PRIMARY KEY NOT NULL IDENTITY(1,1), 
 
