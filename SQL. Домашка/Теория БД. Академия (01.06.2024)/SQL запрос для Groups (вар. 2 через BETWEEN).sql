@@ -1,8 +1,8 @@
-/* Группы (Groups). */
+/* Р“СЂСѓРїРїС‹ (Groups). */
 
 CREATE TABLE Groups ( Id INT PRIMARY KEY IDENTITY(1,1), 
 
-Name NVARCHAR(10) NOT NULL UNIQUE, /* Имя (НЕ NULL, UNIQUE - уникальное). */
-/* nvarchar - строка, как str, число внутри определяет длину. */
-Rating INT NOT NULL CHECK (Rating BETWEEN 0 AND 5), /* CHECK - проверка на что-то... */ 
+Name NVARCHAR(10) NOT NULL UNIQUE, /* РРјСЏ (РќР• NULL, UNIQUE - СѓРЅРёРєР°Р»СЊРЅРѕРµ). */
+/* nvarchar - СЃС‚СЂРѕРєР°, РєР°Рє str, С‡РёСЃР»Рѕ РІРЅСѓС‚СЂРё РѕРїСЂРµРґРµР»СЏРµС‚ РґР»РёРЅСѓ. */
+Rating INT NOT NULL CHECK (Rating BETWEEN 0 AND 5), /* CHECK - РїСЂРѕРІРµСЂРєР° РЅР° С‡С‚Рѕ-С‚Рѕ... */ 
 Year INT NOT NULL CHECK (Year BETWEEN 1 AND 5), );
