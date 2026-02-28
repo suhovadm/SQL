@@ -1,4 +1,4 @@
-/* Группы и лекции (GroupsLectures). */
+/* Р“СЂСѓРїРїС‹ Рё Р»РµРєС†РёРё (GroupsLectures). */
 
 CREATE TABLE GroupsLectures ( Id INT PRIMARY KEY NOT NULL IDENTITY(1,1), 
 
